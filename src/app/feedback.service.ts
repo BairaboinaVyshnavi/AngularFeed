@@ -70,4 +70,8 @@ export class FeedbackService {
   addFeedback(data: any) {
     return this.http.post(`${this.baseUrl}/feedback/add-categories`, data);
   }
+
+  submitFeedbacks(data:any){
+    return this.http.post(`${this.baseUrl}/feedback/submit`, data)
+  }
 }
